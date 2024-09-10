@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EAE6E0;
+    font-family: 'Adonis', serif;
+}
+
+header {
+    background-image: url('./images/coverphoto.JPG'); /* Background image for the header */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the background image */
+    color: #c1bfcb; /* Purple text color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Relative position */
+    z-index: 2; /* Ensure header is above other content */
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #c1bfcb; /* Purple text color for logo */
+}
+
+header .logo a {
+    text-decoration: none;
+    color: inherit; /* Inherit parent color (purple) */
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header nav a {
+    color: inherit; /* Inherit parent color (purple) */
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+header nav a:hover {
+    color: #6e6d71; /* Lighter shade on hover */
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    grid-gap: 10px;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+}
+
+.image {
+    overflow: hidden;
+    border-radius: 0px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer; /* Add pointer cursor */
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1.1);
+}
+
+.image:hover {
+    transform: scale(1.15);
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999; /* Ensure it is on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+}

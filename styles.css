@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Adonis', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f6f9; /* Soft lavender background */
+    color: #3a3a3a; /* Dark text color for better contrast */
+}
+
+/* Header Styles */
+header {
+    background-image: url('./images/coverphoto.JPG'); /* Background image for the header */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the background image */
+    color: #c1bfcb; /* Purple text color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Relative position */
+    z-index: 2; /* Ensure header is above other content */
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #c1bfcb; /* Purple text color for logo */
+}
+
+header .logo a {
+    text-decoration: none;
+    color: inherit; /* Inherit parent color (purple) */
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header nav a {
+    color: inherit; /* Inherit parent color (purple) */
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+header nav a:hover {
+    color: #6e6d71; /* Lighter shade on hover */
+}
+
+/* Main Content Styles */
+main {
+    position: relative; /* Ensure main content is a stacking context */
+    z-index: 1; /* Keep main content behind header */
+    padding-top: 100px; /* Space for the header */
+}
+
+/* Top Section Styles */
+.top-section {
+    height: 60vh; /* Adjust the height of the top section as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #C1BFCB; /* Text color for the top section */
+    position: relative; /* Relative position */
+    background-image: url('./images/coverphoto.JPG'); /* Background image for top section */
+    background-size: cover; /* Cover the entire top section */
+    background-position: center; /* Center the background image */
+    margin-top: -100px; /* Negative margin to overlap with header */
+}
+
+.top-section .content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the background image */
+    padding: 20px;
+}
+
+.top-section h2 {
+    font-size: 6em;
+    margin-bottom: 5px;
+}
+
+.top-section p {
+    font-size: 2em;
+    line-height: 1.6;
+    font-family: monospace;
+}
+
+/* About Me Section Styles */
+.about-me {
+    display: flex;
+    flex-direction: column;
+    background-color: #C1BFCB; /* The purple color used for navigation text */
+    padding: 50px 20px; /* Add padding to ensure space around content */
+    color: #fff; /* White text color for better contrast */
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between text and image */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-me-text {
+    flex: 2;
+    font-family: monospace;
+}
+
+.about-me-text h2 {
+    font-size: 4.5em;
+    margin-bottom: 15px;
+    font-family: serif;
+}
+
+.about-me-text p {
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+
+.about-me-image {
+    flex: 1.5;
+    text-align: center;
+    align-self: center;
+}
+
+.about-me-image img {
+    width: 100%;
+    max-width: 400px; /* Set a maximum width to control the size */
+    height: auto;
+    border-radius: 0; /* Remove rounded corners */
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+.bottom-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.75fr; /* Adjust the proportions here */
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.bottom-section div {
+    background-color: #eae6e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
