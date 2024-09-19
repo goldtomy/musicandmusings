@@ -129,3 +129,42 @@ header nav a:hover {
     color: #bbb;
     text-decoration: none;
 }
+
+
+.footer-bar {
+    position: relative; /* Ensure footer stays at the bottom of the content */
+    width: 100%;
+    background-color:  #979599;
+    padding: 5px 15px; /* Reduce padding to make the bar thinner */
+    display: flex;
+    justify-content: flex-end; /* Align icons to the right */
+    align-items: center;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    overflow: hidden; /* Prevent overflow of elements */
+}
+
+.social-icons a {
+    color: white;
+    margin-left: 8px; /* Further reduce margin to bring the YouTube icon back */
+    font-size: 20px; /* Make icons smaller */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #d1d1d1;
+}
+
+.footer-bar i {
+    font-size: 1.2em; /* Slightly smaller icon size */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .footer-bar {
+        padding: 5px 10px;
+    }
+
+    .social-icons a {
+        margin-left: 6px; /* Reduce margin even further on small screens */
+    }
+}

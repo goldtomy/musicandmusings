@@ -7,28 +7,36 @@ body {
 
 /* Header styling */
 header {
-    background-image: url('./images/coverphoto.JPG'); /* Background image for the header */
-    background-size: cover; /* Cover the entire header */
-    background-position: center; /* Center the background image */
-    color: #c1bfcb; /* Purple text color */
+    background-image: url('./images/coverphoto.JPG');
+    /* Background image for the header */
+    background-size: cover;
+    /* Cover the entire header */
+    background-position: center;
+    /* Center the background image */
+    color: #c1bfcb;
+    /* Purple text color */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* Relative position */
-    z-index: 2; /* Ensure header is above other content */
+    position: relative;
+    /* Relative position */
+    z-index: 2;
+    /* Ensure header is above other content */
 
 }
 
 header .logo h1 {
     margin: 0;
     font-size: 1.5em;
-    color: #c1bfcb; /* Purple text color for logo */
+    color: #c1bfcb;
+    /* Purple text color for logo */
 }
 
 header .logo a {
     text-decoration: none;
-    color: inherit; /* Inherit parent color (purple) */
+    color: inherit;
+    /* Inherit parent color (purple) */
 }
 
 header nav {
@@ -38,15 +46,18 @@ header nav {
 }
 
 header nav a {
-    color: inherit; /* Inherit parent color (purple) */
+    color: inherit;
+    /* Inherit parent color (purple) */
     margin-left: 20px;
     text-decoration: none;
     font-size: 1.1em;
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
 }
 
 header nav a:hover {
-    color: #6e6d71; /* Lighter shade on hover */
+    color: #6e6d71;
+    /* Lighter shade on hover */
 }
 
 .blog-entries {
@@ -65,27 +76,35 @@ body {
 
 /* Header styling */
 header {
-    background-image: url('./images/coverphoto.JPG'); /* Background image for the header */
-    background-size: cover; /* Cover the entire header */
-    background-position: center; /* Center the background image */
-    color: #c1bfcb; /* Purple text color */
+    background-image: url('./images/coverphoto.JPG');
+    /* Background image for the header */
+    background-size: cover;
+    /* Cover the entire header */
+    background-position: center;
+    /* Center the background image */
+    color: #c1bfcb;
+    /* Purple text color */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* Relative position */
-    z-index: 2; /* Ensure header is above other content */
+    position: relative;
+    /* Relative position */
+    z-index: 2;
+    /* Ensure header is above other content */
 }
 
 header .logo h1 {
     margin: 0;
     font-size: 1.5em;
-    color: #c1bfcb; /* Purple text color for logo */
+    color: #c1bfcb;
+    /* Purple text color for logo */
 }
 
 header .logo a {
     text-decoration: none;
-    color: inherit; /* Inherit parent color (purple) */
+    color: inherit;
+    /* Inherit parent color (purple) */
 }
 
 header nav {
@@ -95,15 +114,18 @@ header nav {
 }
 
 header nav a {
-    color: inherit; /* Inherit parent color (purple) */
+    color: inherit;
+    /* Inherit parent color (purple) */
     margin-left: 20px;
     text-decoration: none;
     font-size: 1.1em;
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
 }
 
 header nav a:hover {
-    color: #6e6d71; /* Lighter shade on hover */
+    color: #6e6d71;
+    /* Lighter shade on hover */
 }
 
 .blog-entries {
@@ -141,12 +163,15 @@ header nav a:hover {
     margin: 15px 0;
     color: #410000;
     font-family: 'Adonis', serif;
-    font-size: 28px; /* Increased font size */
-    font-weight: 900; /* Thicker font weight */
+    font-size: 28px;
+    /* Increased font size */
+    font-weight: 900;
+    /* Thicker font weight */
 }
 
 .blog-entry .subtitle {
-    font-size: 12px; /* Smaller font size */
+    font-size: 12px;
+    /* Smaller font size */
     font-family: monospace;
     font-weight: normal;
     color: #410000;
@@ -186,31 +211,71 @@ header nav a:hover {
 
 .scrolling-text {
     display: inline-block;
-    font-family: 'Adonis', serif; /* Your preferred font */
-    font-size: 2rem; /* Adjust size as needed */
-    color: #EAE6E0; /* Adjust text color */
+    font-family: 'Adonis', serif;
+    /* Your preferred font */
+    font-size: 2rem;
+    /* Adjust size as needed */
+    color: #EAE6E0;
+    /* Adjust text color */
     font-weight: lighter;
     white-space: nowrap;
-    animation: scroll-text 10s linear infinite;
+    animation: scroll-text 360s linear infinite;
 }
 
 @keyframes scroll-text {
-    from {
-        transform: translateX(100%);
+    0% {
+        transform: translateX(0);
     }
-    to {
-        transform: translateX(-100%);
+    50% { 
+        transform: translateX(-50%); /* Move halfway across at the 50% mark */
     }
-}
+    100% {
+        transform: translateX(-100%); 
+    }
+ }
 
-/* Repeat the text multiple times to fill the width of the screen */
-.scrolling-wrapper::before,
-.scrolling-wrapper::after {
-    content: ' MUSIC IN AND AROUND  MUSIC IN AND AROUND  MUSIC IN AND AROUND  MUSIC IN AND AROUND  MUSIC IN AND AROUND  MUSIC IN AND AROUND  '; /* Repeat the text enough times to ensure it covers the entire screen width */
+ #wrap-around-text {
     font-family: 'Adonis', serif;
     font-size: 2rem;
-    color: #EAE6E0;
+    /* color: #EAE6E0; */
+    color: #C1BFCB;
     font-weight: lighter;
-    display: inline-block;
+ }
+
+ .footer-bar {
+    position: relative; /* Ensure footer stays at the bottom of the content */
+    width: 100%;
+    background-color:  #979599;
+    padding: 5px 15px; /* Reduce padding to make the bar thinner */
+    display: flex;
+    justify-content: flex-end; /* Align icons to the right */
+    align-items: center;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    overflow: hidden; /* Prevent overflow of elements */
 }
 
+.social-icons a {
+    color: white;
+    margin-left: 8px; /* Further reduce margin to bring the YouTube icon back */
+    font-size: 20px; /* Make icons smaller */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #d1d1d1;
+}
+
+.footer-bar i {
+    font-size: 1.2em; /* Slightly smaller icon size */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .footer-bar {
+        padding: 5px 10px;
+    }
+
+    .social-icons a {
+        margin-left: 6px; /* Reduce margin even further on small screens */
+    }
+}
