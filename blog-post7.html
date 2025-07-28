@@ -1,3 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a midwinter's springtime</title>
+    <link rel="stylesheet" href="blog-styles.css"> <!-- Link to your main stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Adonis" rel="stylesheet">
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><h1>musicandmusings</h1></a>
+        </div>
+        <nav>
+            <a href="blog.html">Blog</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <style>
+
+        /* Header styling */
+    header {
+    background-image: url(./images/coverphoto.JPG); /* Background image for the header */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the background image */
+    color: #c1bfcb; /* Purple text color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Relative position */
+    z-index: 2; /* Ensure header is above other content */
+}
+
+header .logo h1 {
+    margin: 0;
+    font-family: serif;
+    font-size: 1.5em;
+    color: #c1bfcb; /* Purple text color for logo */
+}
+
+header .logo a {
+    text-decoration: none;
+    color: inherit; /* Inherit parent color (purple) */
+    
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #c1bfcb;
+}
+
+header nav a {
+    color: inherit; /* Inherit parent color (purple) */
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+header nav a:hover {
+    color: #6e6d71; /* Lighter shade on hover */
+}
+
+
+        body {
+            font-family: monospace;
+            padding: 0;
+            margin: 0;
+            background: #e8e4dc;
+            line-height: 1.8; /* Line spacing */
+            letter-spacing: 0.5px;
+        }
+
+        .blog-post {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            color: #410000;
+            font-size: 1em;
+        }
+
+        .blog-title {
+            font-size: 60px; /* Huge title */
+            font-family: serif;
+            color: #410000 ;
+            font-weight: 900;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .post-date {
+            font-size: 16px;
+            color: #410000;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .blog-body {
+            font-size: 16px;
+            color: #e8e4dc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .blog-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .blog-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Ensure the image covers the space */
+        }
+
+        blockquote {
+            margin: 20px 0;
+            padding: 10px 20px;
+            color: #e8e4dc;
+            background-color:#807c44;
+            border-left: 5px solid #ccc;
+            text-align: center;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
 <div class="blog-post">
   <h1 class="blog-title">KENSINGTON</h1>
   <div class="post-date">April 18, 2025</div>
@@ -7,36 +142,44 @@
   <p>I had no idea what I signed up for with Mission Exchange. My motives were nothing like the mission’s core. But somewhere along the way, I began to see how God weaves our personal desires with His greater purpose. </p>
 
   <h3>“Kensington.”</h3>
-  <p>They told us the night before. That night, fear shook me—different from the usual kind. Not the fear of failing or not being enough. This was fear of people. Fear of place. I had grown up in a bubble. And the next morning, I was about to step out of it.</p>
+  <p> They told us about the place the night before we started mission. I grappled with fear that night. Fear had always been a personal issue of mine; one that had been blaring more vigorously in the past couple months. Fear of not being good enough. Fear of being a failure. Fear of not succeeding. Fear of not living up to expectations. Fear of losing. But—the fear I experienced that night was a different kind of fear. It was a fear of people and of place. I’ve never experienced that type of fear before. I grew up in a bubble. Literally. And that night, one thing I knew for sure was that tomorrow I would witness a world outside of that bubble. And face a fear of mine, literally. </p>
 
   <h3>Second Station: Jesus Accepts His Cross</h3>
   <p>We were on the streets, all in gray shirts, carrying bags—PB&J sandwiches, clothing, prayer cards. One bag held a hammer, nails, and a massive wooden cross.</p>
-  <p>For three days we walked Kensington, praying with people, writing intentions on sticky notes, and nailing them to that cross.</p>
-  <p>Near the top, I added my own intention. It was small—almost silly—but that’s the beauty of the Cross. It holds not just the cries but also the soft smiles, the things that make us blush. All of it belongs there.</p>
+  <p>For three days we walked down Kensington Avenue, praying with people, writing intentions on sticky notes, and nailing them to that cross.</p>
+  <p>Just towards the very top of that heavy crossed, I nailed my own intention. When you think about everything else that was on there, you would laugh at mine; maybe even blush a bit.. but then you realize, that’s the beauty of it. The cross was meant to take on <em>everything</em>. Not just the things we cry about. But also the things we laugh and smile and even maybe blush a little about. </p>
 
   <h3>Third Station: Jesus Falls the First Time</h3>
-  <p>I made eye contact with a woman across the street. She crossed over. Unsteady. I prayed with my hand on her shoulder, and her weight sank into me. She was high—literally falling. I held both her shoulders, bracing her body as I prayed. Then, just like that, she left. I watched her wobble away, the weight of her still pressed into me.</p>
+  <p>There was a lady I made eye contact with from the other side of the street. I waved at her. And she crossed the road to get to us. Surprised she even crossed the road to get to me, I started talking to her. But I soon realized there was something about her that was not grounded. She kept dipping her head. Very unstable. And then I asked her if I could pray for her. She allowed me to put her hand on her shoulder. And as I prayed for her, I was closing my eyes, but I started feeling her weight get heavier and heavier on my hand. At a certain point, it got too heavy for me. I opened my eyes. She was high on drugs. She was literally falling in a way her head was bent so low, it was going to hit the ground if I didn’t support her other shoulder with my other hand. So here I am praying for her and holding her shoulders up with both my hands. Taking in all her weight. And then I patted her on her shoulders, repositioned her body, and waited for her to gain some consciousness. She walked off, just like that. I could see her barely grounding each step as she walked. What if she just collapsed somewhere? There was absolutely nothing I could do about it. The weight of that thought remained heavy on me. </p>
 
   <h3>Fourth Station: Jesus Meets His Afflicted Mother</h3>
-  <p>We stayed with a sweet chechi and her three giggling kids. Every night felt like returning from the trenches to a cradle. What a gift to have a home to come back to. What a gift to be held like that.</p>
+  <p> We stayed with a sweet chechi and her three adorable little kids. Every night felt like returning from the trenches to a cradle. What a gift to have a home to come back to. What a gift it is to be wrapped in a warmth like that.</p>
 
   <h3>Fifth Station: Simon Helps Jesus Carry the Cross</h3>
   <p>At Sarnelli House, I served food. I felt joy scooping potatoes onto plates of my brothers and sisters. The ovens’ warmth, the smells, the music—it felt like home. One man struggled to carry his plate atop a tower of bags. I hesitated. Then I asked, “Can I help you?” His “yes” was immediate. I carried his bags, walked him to a seat, and brought him something to drink. That was my Simon moment. And it felt right.</p>
 
   <h3>Sixth Station: Veronica Offers Her Veil to Jesus</h3>
-  <p>We passed a man with blood around his eye. I looked away. Ann didn’t. She asked him if she could help clean it. He said no. She asked again, gently. He walked off. But I stood in awe. Ann, how do you have a heart like that?</p>
+  <p>We passed a man with blood around his eye. He seemed to be in a hurry, and I instinctively looked away at the sight. But not Ann. She stopped him.</p>
+  <p>"Sir, can I get you some gauze?" she asked.</p>
+  <p>In my mind I was thinking, <em>Why is she even talking to him?</em> Just the sight of his bruised face made me want to walk away faster.</p>
+  <p>He politely said no.</p>
+  <p><em>Okay, let's just move on now</em>, I thought. But no.
+  <p> Ann paused. Stood right there. And asked, “Can I help you clean it?”
+  <p> Now <em>that</em> made me skip a breath. </p>
+  <p> In appreciation, he said thank you, but continued forward in haste. </p>
+  <p> In my immaturity I was relieved, but also just stunned and inspired by Ann's courage. </p>
 
   <h3>Seventh Station: Jesus Falls the Second Time</h3>
   <p>Car rides were our joy. Nimmy Chechi sang in Spanish, Angel played Portuguese songs, and Rosa Chechi tried to teach Abbey and me Hindi. If we weren’t knocked out, we were laughing. Five girls, one car, and a soundtrack of joy we never turned off.</p>
 
   <h3>Eighth Station: Jesus Meets His Afflicted Mother</h3>
   <p>I cried kneeling in front of the abortion clinic downtown. Rosary clenched, heart helpless, I watched women walk in and prayed: </p>
-  <blockquote>“Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.”</blockquote>
+  <blockquote>“Holy Mary, Mother of God, pray for us sinners, now and... now and at the hour of our death. Amen.”</blockquote>
 
   <h3>Ninth Station: Jesus Falls the Third Time</h3>
   <p>Joseph looked at my love and said he had a thing for this.</p>
-  <p>He looked at me and said I had a thing for this.</p>
-  <p>He looked at us and said we had a thing for this.</p>
+  <p>Joseph looked at me and said I had a thing for this.</p>
+  <p>Joseph looked at us and said we had a thing for this.</p>
 
   <h3>Tenth Station: Jesus is Stripped of His Garments</h3>
   <p>I watched Rebecca Chechi talk to a man on the street. He was tough, guarded. When she asked to pray with him, he joked, “You don’t wanna touch me.”</p>
@@ -46,24 +189,27 @@
   <h3>Eleventh Station: Jesus is Nailed to the Cross</h3>
   <p>Kay said no to veggies.</p>
   <p>I said, “Eat yo veggies, Kay.”</p>
-  <p>We laughed out loud.</p>
+  <p>We both laughed out loud.</p>
 
   <h3>Twelfth Station: Jesus Dies on the Cross</h3>
-  <p>In the ache of Kensington, I found butterflies. I was falling in love. It was beautiful. Sometimes, to understand the depth of the Cross, you have to feel your heart race with love.</p>
+  <p>Amidst the heartache that filled Kensington Avenue, I was experiencing the butterflies of a budding romance. Our moments together were making me fall more in love. It was beautiful. Sometimes you have to experience the way your heart beats when in love to understand a glimpse of what even His heart was going through on that cross. </p>
 
   <h3>Thirteenth Station: Jesus is Taken Down from the Cross</h3>
-  <p>We visited the Sisters of Life convent. I ran into Sister Mary Grace—who I had practically stalked at SEEK! She remembered me. The space was peaceful, the donation room full of baby clothes, like fresh life. </p>
-  <p>Four flights of stairs humbled me, but the view at the top—downtown Philly through old, wide windows—stole my breath. I imagined teaching there. Goosebumps rose on my arms.</p>
+  <p>We walked into the Sister of Life convent in Downtown Philly. As soon as I saw her, my eyes glittered. Her’s too. She recognized me! It was Sister Mary Grace from SEEK. I remember how I kept going up to her and Sister Zion at the conference. It was obnoxious the amount of times I ran into and spoke to them there. I think that’s why my face stuck with her. Who would’ve thought I would run into her again as the doors opened!</p>
+  <p>The convent was beautiful. There was a serene peace about the place. Everything was tidy, neat, and put together. I was assigned to help sort and organize donations. It was a huge room that looked kind of like a Salvation Army store room, lined from one end to the other with baby clothes. The room felt like fresh life. </p>
+  <p>The building we were in was built before elevators. Carrying some play pins up four flights of the widest wooden stairs humbled me. But the view from the fourth floor made me forget the ache in my legs: a quiet sweep of downtown Philly, framed by the wide, un-renovated windows of a forgotten classroom. I imagined teaching from here, and the room seemed to breathe goosebumps into my skin.  </pp>
 
   <h3>Fourteenth Station: Jesus is Laid in the Sepulcher</h3>
-  <p>The streets of Kensington taught me to be unafraid.</p>
-  <p>Unafraid to hold hands.</p>
+  <p>The streets of Kensington taught me a lot about being unafraid. Coming back into the streets of my own life, I felt </p>
+  <p>Unafraid to take people’s hands. </p>
   <p>Unafraid to give hugs.</p>
-  <p>Unafraid to carry my cross.</p>
+  <p>Unafraid to stretch out my hands. </p>
+  <p>Unafraid to carry my cross. </p>
 
-  <p>We ended the week in adoration. Music playing. I knelt before Jesus and whispered into the monstrance: “I’m all yours.”</p>
-  <p>And as I bent low and kissed the altar ground, I felt like a princess.</p>
-  <p>Before His throne, I felt crowned. Claimed. Loved.</p>
+  <p>We ended that week in adoration. Just as the last verse of “Build My Life” rolled around, I’m kneeling right in front of Jesus. The music is loud enough for me to speak out loud into the monstrance: “I’m all yours. You can do with me whatever you please.”</p>
+  <p>And as I bent low and kissed the ground of the altar, I felt like a princess. Before the monstrance, I felt beautiful. Before His glorious presence, I felt crowned. Before His majesty, I felt like His prized possession. Before His throne, I felt claimed.</p>
+  <p></p>
+  <p>Why then, oh daughter, should you fear?</p>
 
   <blockquote>“And behold, I am with you always, until the end of the age.” — Matthew 28:20</blockquote>
 </div>
